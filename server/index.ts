@@ -1,3 +1,13 @@
+import dotenv from 'dotenv';
+import * as path from 'path';
+import { fileURLToPath } from 'url';
+
+// Load environment variables from .env file early in the application startup
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+const rootDir = path.resolve(__dirname, '..');
+dotenv.config({ path: path.resolve(rootDir, '.env') });
+
 import express, { type Request, Response, NextFunction } from "express";
 import { registerRoutes } from "./routes";
 import { setupVite, serveStatic, log } from "./vite";
