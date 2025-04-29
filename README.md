@@ -54,6 +54,11 @@ A surfing-themed blog with pre-populated content from multiple authors using Rea
 
 5. Open your browser and visit `http://localhost:5000`
 
+   If you need to specify a different port, you can set the PORT environment variable:
+   ```bash
+   PORT=3000 npm run dev
+   ```
+
 ## Project Structure
 
 - `/client` - React frontend
