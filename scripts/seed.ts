@@ -709,7 +709,7 @@ The ocean has given us so much. Now it's our turn to give back.
   });
   
   await storage.createComment({
-    content: "I wish I'd read this before buying my first board. Started on a 6'0' shortboard and it was a nightmare. Switched to a 8'0' foamie and suddenly I was actually catching waves!",
+    content: "I wish I had read this before buying my first board. Started on a shortboard and it was a nightmare. Switched to a foamie and suddenly I was actually catching waves!",
     postId: createdPosts[2].id,
     userName: "WaveCatcher",
     userEmail: "wavecatcher@example.com",
